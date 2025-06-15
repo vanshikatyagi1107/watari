@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Water Conservation Chatbot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+      <div class="container-all">
+
+        <!-- Blur effect and Blob -->
+        <div class="blur">
+          <div class="blob"></div>
+        </div>
+
+        <!-- Fish Container -->
+        <div class="fish-container">
+          <img alt="deco" src="{{ url_for('static', filename='images/fish.svg') }}" class="deco fish fish1">
+          <img alt="deco" src="{{ url_for('static', filename='images/fish.svg') }}" class="deco fish fish2">
+          <img alt="deco" src="{{ url_for('static', filename='images/fish.svg') }}" class="deco fish fish3">
+        </div>
+        <img alt="deco" src="{{ url_for('static', filename='images/urchins.svg') }}" class="deco urchins">
+        <img alt="deco" src="{{ url_for('static', filename='images/star.svg') }}" class="deco star">
+        
+        <img alt="deco" src="{{ url_for('static', filename='images/octo.svg') }}" class="deco octo">
+        <!-- Main Container -->
+        <div class="container">
+          <!-- Left Section: Info -->
+          <div class="info-section">
+            <div class="header">
+              <div class="icon-container">
+                <img alt="icon" src="{{ url_for('static', filename='images/water-icon.svg') }}" class="icon">
+              </div>
+              <div class="name-button">
+                <h1>Water Conservation Chatbot</h1>
+                <button id="new-chat-btn" class="new-chat-btn">New Chat</button>
+              </div>
+            </div>
+            <div class="description">
+              <p>
+                Got questions about drought? Need tips on saving water? Or maybe you're looking for clever ways to
+                protect
+                our planet's most precious resource? I'm here to help! Let's work together to create a more sustainable
+                future, one drop at a time. 🌍💧
+              </p>
+            </div>
+            <div class="chat-transcript">
+              <h4>Chat Transcript:</h4>
+              <button id="download-btn" class="download-btn">Download</button>
+            </div>
+          </div>
+
+          <!-- Right Section: Chat -->
+          <div class="chat-section">
+            <div id="chat-box" class="chat-box">
+              <!-- Chat messages will appear here -->
+            </div>
+            <div class="chat-footer">
+              <div class="suggestions">
+                <button class="suggestion-btn">saving water</button>
+                <button class="suggestion-btn">water</button>
+                <button class="suggestion-btn">water harvesting</button>
+              </div>
+              <div class="chat-input-container">
+                <input id="chat-input" class="chat-input" type="text" placeholder="Type your question here!">
+                <button id="send-btn" class="send-btn"><img src="{{ url_for('static', filename='images/Send.svg') }}"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
