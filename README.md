@@ -4,7 +4,7 @@ The chatbot can take user input, classify it using a trained model, and respond 
 
 ---
 
-## 📌 Features
+## Features
 
 - Visually appealing chat interface
 - Trained machine learning model (using scikit-learn)
@@ -15,17 +15,15 @@ The chatbot can take user input, classify it using a trained model, and respond 
 
 ---
 
-## 🧠 Tech Used
-
-- **Python + Flask** (for backend API)
-- **HTML, CSS, JavaScript** (for frontend)
-- **scikit-learn** (for the ML model)
-- **Pickle** (to save the model and vectorizer)
-- **JSON** (for storing predefined responses)
+## Technologies Used
+- **Backend**: Python + Flask
+- **Frontend**: HTML, CSS, JavaScript
+- **ML Model**: scikit-learn (trained and saved using Pickle)
+- **Intents**: JSON (used for storing patterns and responses)
 
 ---
 
-## 💻 How to Run
+## How to Run
 
 1. **Clone this repo** or download the code files.
 
